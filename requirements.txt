@@ -1,1 +1,6 @@
 memory_profiler>=0.57.0
+dash
+pandas
+plotly
+gunicorn>=21.2.0
+

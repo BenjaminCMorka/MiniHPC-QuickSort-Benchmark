@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: quicksort-dash
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn dash_app:server
