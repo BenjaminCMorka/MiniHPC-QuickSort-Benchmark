@@ -14,8 +14,8 @@ app = dash.Dash(__name__)
 app.title = "QuickSort Benchmark Dashboard"
 
 
-app.layout = html.Div([
-    html.H1("QuickSort Benchmark Dashboard", style={"textAlign": "center"}),
+app.layout = html.Div(style={"padding": "30px"}, children=[
+    html.H1("QuickSort Benchmark Dashboard"),
 
     dcc.Graph(
         id="benchmark-plot",
@@ -27,7 +27,8 @@ app.layout = html.Div([
             markers=True,
             title="Average Sorting Time by Array Size and Method",
             labels={"Time (s)": "Average Time (s)"}
-        )
+        ),
+        style={"marginTop": "40px"}
     ),
 
     html.Div([
@@ -43,9 +44,8 @@ app.layout = html.Div([
                 hover_data=["Run"]
             )
         )
-    ], style={"marginTop": "40px"})
+    ], style={"marginTop": "60px"})
 ])
-
 server = app.server  
 
 if __name__ == "__main__":
