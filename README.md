@@ -35,6 +35,8 @@ The benchmark suite tests **Serial** and **Parallel QuickSort** implementations 
 - Generates a performance plot (`benchmark_plot.png`) visualizing average runtime across input sizes.
 - Uses `matplotlib` for plotting.
 
+![QuickSort Performance: Serial vs Parallel](benchmark_plot.png)
+
 ### Running the Benchmark Suite
 
 ```bash
