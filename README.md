@@ -41,3 +41,9 @@ The benchmark suite tests **Serial** and **Parallel QuickSort** implementations 
 
 ```bash
 python benchmark_suite.py
+```
+---
+
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white) 
