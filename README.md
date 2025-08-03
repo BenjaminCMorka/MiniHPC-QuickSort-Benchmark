@@ -25,14 +25,17 @@ This project demonstrates efficient implementation and benchmarking of **Paralle
 
 ---
 
-## Getting Started
+## Benchmark Suite
 
-### Prerequisites
+The benchmark suite tests **Serial** and **Parallel QuickSort** implementations over multiple array sizes and runs, providing comprehensive performance analysis.
 
-- Python 3.8 or higher
-- Packages listed in `requirements.txt`
+- Runs multiple trials per array size to ensure stable results.
+- Records elapsed time for each run.
+- Saves results in `benchmark_results.csv` for further analysis.
+- Generates a performance plot (`benchmark_plot.png`) visualizing average runtime across input sizes.
+- Uses `matplotlib` for plotting.
 
-Install dependencies:
+### Running the Benchmark Suite
 
 ```bash
-pip install -r requirements.txt
+python benchmark_suite.py
